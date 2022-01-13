@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="532.0" style="-fx-background-color: #bcd4e6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorVistas.ControladorPrincipal">
+   <children>
+      <Button fx:id="btn_borrar" layoutX="406.0" layoutY="1.0" mnemonicParsing="false" onAction="#borrar" style="-fx-background-color: #8db600;" text="Borrar" />
+      <Button layoutX="134.0" layoutY="1.0" mnemonicParsing="false" onAction="#buscar" style="-fx-background-color: #8db600;" text="Buscar" />
+      <Button fx:id="btn_actualizar" layoutX="266.0" layoutY="1.0" mnemonicParsing="false" onAction="#actualizar" style="-fx-background-color: #8db600;" text="Actualizar" />
+      <Button fx:id="btn_crear" layoutX="11.0" layoutY="1.0" mnemonicParsing="false" onAction="#crear" style="-fx-background-color: #8db600;" text="Crear" />
+      <TableView fx:id="tabla" layoutX="11.0" layoutY="56.0" onMouseClicked="#seleccionar" prefHeight="300.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="Col_nombre" editable="false" prefWidth="300.0" text="Tarea" />
+          <TableColumn fx:id="Col_contador" editable="false" minWidth="50.0" prefWidth="60.0" text="Horas" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_nombre" layoutX="386.0" layoutY="99.0" prefHeight="26.0" prefWidth="131.0" />
+      <TextField fx:id="txt_horas" layoutX="386.0" layoutY="193.0" prefHeight="26.0" prefWidth="54.0" />
+      <Label layoutX="386.0" layoutY="67.0" text="Nombre Tarea" />
+      <Label layoutX="386.0" layoutY="163.0" text="Horas" />
+   </children>
+</AnchorPane>
