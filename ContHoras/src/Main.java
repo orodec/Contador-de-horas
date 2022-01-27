@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
    
-package ControladorVistas;
+
 
 import java.io.IOException;
 import javafx.application.Application;
